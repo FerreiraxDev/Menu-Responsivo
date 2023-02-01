@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #345050;
+}
+
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px 0;
+}
+
+.logo{
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+.menu{
+    width: 800px;
+}
+
+.menu ul{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.btn-menu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-menu{
+    fill: #fff;
+    display: none;
+}
+.menu-responsivo{
+    display: none;
+}
+
+@media only screen and  (max-width: 768px){
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-menu{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-responsivo{
+        text-align: center;
+        display: block;
+    }
+
+    .menu-responsivo ul{
+        background-color: #1b2020ce;
+    }
+    .menu-responsivo ul li{
+        padding: 15px 0;
+        font-size: 23px;
+        text-transform: uppercase;
+    }
+
+    .menu-responsivo ul li a:hover{
+        border-bottom: 3px solid #fff;
+        transition: 0.2s ease-in;
+        font-weight: 700;
+    }
+
+
+    .menu-responsivo .nav-item{
+        width: 100%;
+    }
+
+    .open{
+        display: none;
+    }
+    
+}
